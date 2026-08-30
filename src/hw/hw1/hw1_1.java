@@ -1,40 +1,72 @@
 package hw.hw1;
 
-import java.util.ArrayList;
-import java.util.List;
-import lombok.Getter;
-import lombok.Setter;
-
-@Getter
-@Setter
-class Post {
+class Posts {
     private int userId;
     private int id;
     private String title;
     private String body;
 
-    public Post(int userId, int id, String title, String body) {
-        this.userId = userId;
+    public Posts(int id, int userId, String title, String body) {
         this.id = id;
+        this.userId = userId;
         this.title = title;
         this.body = body;
     }
 
-    @Override
-    public String toString(){
-        return "Post{" + "userId=" + userId + ", title=" + title + ", body=" + body + '}';
+    public int getUserId() {
+        return userId;
     }
 
-    static void main() {
-        List<Post> posts = new ArrayList<>();
-        posts.add(new Post(1, 1, "Title 1", "Body text 1"));
-        posts.add(new Post(1, 2, "Title 2", "Body text 2"));
-        posts.add(new Post(2, 3, "Title 3", "Body text 3"));
-        posts.add(new Post(2, 4, "Title 4", "Body text 4"));
-        posts.add(new Post(3, 5, "Title 5", "Body text 5"));
+    public String getBody() {
+        return body;
+    }
 
-        for (Post post : posts) {
-            System.out.println(post);
-        }
+    public String getTitle() {
+        return title;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
+
+    public void setBody(String body) {
+        this.body = body;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+    @Override
+    public String toString() {
+        return "Posts{" +
+                "userId=" + userId +
+                ", id=" + id +
+                ", title='" + title + '\'' +
+                ", body='" + body + '\'' +
+                '}';
     }
 }
+    class Main{
+        public static void main(String[] args) {
+            Posts[] posts = new Posts[]{
+                    new Posts(1, 1, "title1", "body"),
+                    new Posts(1, 2, "title2", "body"),
+                    new Posts(1, 3, "title3", "body"),
+                    new Posts(1, 4, "title4", "body"),
+                    new Posts(1, 5, "title5", "body")
+            };
+
+            for (Posts post : posts) {
+                System.out.println(post);
+            }
+        }
+    }
+
