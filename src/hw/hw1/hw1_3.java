@@ -3,15 +3,15 @@ package hw.hw1;
 class Book {
     private String title;
     private int id;
-    private int number_of_pages;
+    private int numberOfPages;
     private String author;
     private int year;
 
-    public Book(String title, int year, String author, int number_of_pages, int id) {
+    public Book(String title, int year, String author, int numberOfPages, int id) {
         this.title = title;
         this.year = year;
         this.author = author;
-        this.number_of_pages = number_of_pages;
+        this.numberOfPages = numberOfPages;
         this.id = id;
     }
 
@@ -23,8 +23,8 @@ class Book {
         return title;
     }
 
-    public int getNumber_of_pages() {
-        return number_of_pages;
+    public int getNumberOfPages() {
+        return numberOfPages;
     }
 
     public String getAuthor() {
@@ -43,8 +43,8 @@ class Book {
         this.id = id;
     }
 
-    public void setNumber_of_pages(int number_of_pages) {
-        this.number_of_pages = number_of_pages;
+    public void setNumberOfPages(int numberOfPages) {
+        this.numberOfPages = numberOfPages;
     }
 
     public void setAuthor(String author) {
@@ -59,7 +59,7 @@ class Book {
         return "Book{" +
                 "title='" + title + '\'' +
                 ", id=" + id +
-                ", number_of_pages=" + number_of_pages +
+                ", numberOfPages=" + numberOfPages +
                 ", author='" + author + '\'' +
                 ", year=" + year +
                 '}';

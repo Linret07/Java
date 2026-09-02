@@ -6,9 +6,9 @@ class Posts {
     private String title;
     private String body;
 
-    public Posts(int id, int userId, String title, String body) {
-        this.id = id;
+    public Posts(int userId, int id, String title, String body) {
         this.userId = userId;
+        this.id = id;
         this.title = title;
         this.body = body;
     }

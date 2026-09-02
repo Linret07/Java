@@ -4,13 +4,13 @@ class Dog {
     private String name;
     private String breed;
     private String color;
-    private int phone_number;
+    private String phoneNumber;
     private int age;
 
-    public Dog(String name, int age, int phone_number, String color, String breed) {
+    public Dog(String name, int age, String phoneNumber, String color, String breed) {
         this.name = name;
         this.age = age;
-        this.phone_number = phone_number;
+        this.phoneNumber = phoneNumber;
         this.color = color;
         this.breed = breed;
     }
@@ -27,8 +27,8 @@ class Dog {
         return color;
     }
 
-    public int getPhone_number() {
-        return phone_number;
+    public String getPhoneNumber() {
+        return phoneNumber;
     }
 
     public int getAge() {
@@ -43,8 +43,8 @@ class Dog {
         this.age = age;
     }
 
-    public void setPhone_number(int phone_number) {
-        this.phone_number = phone_number;
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     public void setColor(String color) {
@@ -61,14 +61,14 @@ class Dog {
                 "name='" + name + '\'' +
                 ", breed='" + breed + '\'' +
                 ", color='" + color + '\'' +
-                ", phone_number=" + phone_number +
+                ", phoneNumber='" + phoneNumber + '\'' +
                 ", age=" + age +
                 '}';
     }
 }
 class Main2 {
         public static void main(String[] args) {
-         Dog dog = new Dog("Buddy", 3, 123456789, "Brown", "Labrador");
+         Dog dog = new Dog("Buddy", 3, "123456789", "Brown", "Labrador");
          System.out.println(dog);
         }
 }
