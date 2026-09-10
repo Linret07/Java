@@ -67,7 +67,6 @@ public class MainHw5 {
 
         System.out.println("\n=== Студенти та їхні курси ===");
         result.forEach(System.out::println);
-        System.out.println("Результат записано у файл: " + resultFile);
     }
 
     private static Student parseStudent(String line) {
