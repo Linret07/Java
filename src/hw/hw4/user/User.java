@@ -1,4 +1,6 @@
-package hw.hw4;
+package hw.hw4.user;
+
+import hw.hw4.vehicle.CarInfo;
 
 import java.util.List;
 import java.util.Objects;

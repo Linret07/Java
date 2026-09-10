@@ -1,4 +1,4 @@
-package hw.hw4;
+package hw.hw4.user;
 
 import java.util.Objects;
 

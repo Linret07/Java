@@ -1,4 +1,4 @@
-package hw.hw4;
+package hw.hw4.zoo;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;

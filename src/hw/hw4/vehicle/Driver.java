@@ -1,4 +1,4 @@
-package hw.hw4;
+package hw.hw4.vehicle;
 
 public class Driver {
     private final String name;
