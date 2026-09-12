@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
@@ -70,27 +71,31 @@ public class MainHw5 {
     }
 
     private static Student parseStudent(String line) {
-        String[] values = line.split(";", -1);
-        if (values.length != 3) {
-            throw new IllegalArgumentException("Неправильний формат студента: " + line);
-        }
+        String[] values = splitLine(line, 3, "студента");
         return new Student(values[0], Integer.parseInt(values[1]), values[2]);
     }
 
     private static StudentCourse parseStudentCourse(String line) {
-        String[] values = line.split(";", -1);
-        if (values.length != 3) {
-            throw new IllegalArgumentException("Неправильний формат студента: " + line);
-        }
+        String[] values = splitLine(line, 3, "студента з курсом");
         return new StudentCourse(Integer.parseInt(values[0]), values[1], Integer.parseInt(values[2]));
     }
 
     private static Course parseCourse(String line) {
-        String[] values = line.split(";", -1);
-        if (values.length != 2) {
-            throw new IllegalArgumentException("Неправильний формат курсу: " + line);
-        }
+        String[] values = splitLine(line, 2, "курсу");
         return new Course(Integer.parseInt(values[0]), values[1]);
+    }
+
+    private static String[] splitLine(String line, int expectedParts, String entityName) {
+        String[] values = line.split(";", -1);
+        if (values.length != expectedParts) {
+            throw new IllegalArgumentException(
+                    "Неправильний формат " + entityName + ": " + line
+            );
+        }
+
+        return Arrays.stream(values)
+                .map(String::trim)
+                .toArray(String[]::new);
     }
 
     private static String formatStudentCourse(StudentCourse student, List<Course> courses) {
