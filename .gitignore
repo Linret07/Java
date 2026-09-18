@@ -28,3 +28,7 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+### Local H2 database files ###
+/data/*.mv.db
+/data/*.trace.db
