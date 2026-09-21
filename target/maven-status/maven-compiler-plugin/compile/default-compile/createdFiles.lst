@@ -19,6 +19,7 @@ lessons\lesson3\lesson3_4\Some.class
 hw\hw1\Dog.class
 lessons\lesson1\lesson1_2\User.class
 lessons\lesson4\lesson4_2\Main.class
+hw\hw7\config\HibernateUtil.class
 lessons\lesson3\lesson3_1\Singer.class
 hw\hw1\Main2.class
 hw\hw3\Book.class
@@ -28,6 +29,7 @@ hw\hw2\Geo.class
 lessons\lesson2\Main.class
 lessons\lesson4\lesson4_5\Main.class
 lessons\lesson6\lesson6_1\Main.class
+hw\hw7\model\Employee.class
 hw\hw3\MainHw3.class
 hw\hw4\zoo\ZooClub.class
 lessons\lesson2\Passport.class
@@ -40,6 +42,7 @@ hw\hw6\model\CarType.class
 lessons\lesson3\lesson3_1\User.class
 lessons\lesson4\lesson4_3\Main.class
 lessons\lesson4\lesson4_4\Main.class
+hw\hw7\MainHw7.class
 lessons\lesson3\lesson3_2\User.class
 hw\hw2\Post.class
 hw\hw4\user\Gender.class
@@ -71,6 +74,7 @@ lessons\lesson3\lesson3_2\Main$1.class
 lessons\lesson4\lesson4_3\User.class
 hw\hw6\MainHw6.class
 lessons\lesson6\lesson6_4\Main.class
+hw\hw7\model\Department.class
 hw\hw3\Guitar.class
 lessons\lesson3\lesson3_2\Main.class
 lessons\lesson3\lesson3_4\Main.class
@@ -82,6 +86,7 @@ lessons\lesson2\Customer.class
 hw\hw2\Employee.class
 lessons\lesson3\lesson3_3\Main$1.class
 hw\hw1\Main5.class
+hw\hw7\model\Student.class
 lessons\lesson3\lesson3_3\comparatorImp.class
 hw\hw6\config\HibernateUtil.class
 lessons\lesson3\lesson3_7\User.class
@@ -99,4 +104,5 @@ lessons\lesson5\lesson5_1\Main.class
 lessons\lesson3\lesson3_6\Main.class
 lessons\lesson3\lesson3_7\Customer.class
 lessons\lesson5\lesson5_2\Main.class
+hw\hw7\model\Course.class
 lessons\lesson3\lesson3_2\Main$3.class
